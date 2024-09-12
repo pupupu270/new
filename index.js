@@ -1,28 +1,20 @@
 
-
-
 let http = require("http");
-
 let fs = require("fs");
 
 
-http.createServer((req,res)=>{
+http.createServer((req, res) => {
 
-console.log(req.url);
+    console.log(req.url);
+    if (req.url == "/")
+        req.url = "/index.html";
 
-if(req.url =="/")
-req.url ="/index.html";
+    fs.readFile(__dirname + "/html" + req.url, (err, data) => {
 
-let url = "node"+req.url;
-console.log(url);
-//fs.readFile("node/index.html",(err,data)=>{
-fs.readFile(url,(err,data)=>{
-res.writeHead(200,{"Content-Type":"text/html"});
-res.write(data);
-res.end();
-
-});
-
-
-
-}).listen(2000);
+        if (err == null)
+        {
+            res.writeHead(200);
+            res.write(data);
+            res.end();
+        }
+    });
