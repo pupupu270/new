@@ -5,10 +5,10 @@ let fs = require("fs");
 
 const  {Client} = require("pg");
 const sql_client = new Client({
-  user: "first",
-  host: "ep-holy-truth-a1tnuv5o.ap-southeast-1.aws.neon.tech",
-  database: "001",
-  password: "6VegPd2cGpwa"
+  user: "first001",
+  host: "dpg-crhtgndumphs73c92kh0-a",
+  database: "trial001",
+  password: "EGFUOhbUkGwWrWsXTKYC3gITDiCbxCa1"
 });
 sql_client.connect();
 
