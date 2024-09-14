@@ -9,7 +9,7 @@ const  {Client} = require("pg");
 
 const sql_client = new Client({
   user: "first001",
-  host: "postgresql://first001:EGFUOhbUkGwWrWsXTKYC3gITDiCbxCa1@dpg-crhtgndumphs73c92kh0-a/trial001",
+  host: "postgresql://first001:EGFUOhbUkGwWrWsXTKYC3gITDiCbxCa1@dpg-crhtgndumphs73c92kh0-a.singapore-postgres.render.com/trial001",
   database: "trial001",
   password: "EGFUOhbUkGwWrWsXTKYC3gITDiCbxCa1"
 });
