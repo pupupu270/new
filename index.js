@@ -8,7 +8,7 @@ const  {Client} = require("pg");
 
 
 const sql_client = new Client({
-connectionString:"postgresql://first001:EGFUOhbUkGwWrWsXTKYC3gITDiCbxCa1@dpg-crhtgndumphs73c92kh0-a/trial001"
+connectionString:""
 });
 sql_client.connect();
 
