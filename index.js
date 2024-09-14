@@ -15,6 +15,8 @@ const sql_client = new Client({
 });
 sql_client.connect();
 
+sql_client.end();
+
 
 
 
